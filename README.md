@@ -47,5 +47,5 @@ Android5.0 Camera2 ImageReader 读取YUV格式转为RGB格式的方法
         Bitmap mRGBframeBitmap = Bitmap.createBitmap(image.getWidth(), image.getHeight(), Bitmap.Config.ARGB_8888);
         mRGBframeBitmap.setPixels(mRGBBytes, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
         image.close();
-    }```
+    }
 
