@@ -3,6 +3,7 @@ Android5.0 Camera2 ImageReader 读取YUV格式转为RGB格式的方法
 
 高效：
 在双Cortex-A72大核+四Cortex-A53小核（RK3399）下处理640x480图片平均耗时22ms
+
 不同方法性能比较见http://www.mclover.cn
 
 使用方法：
