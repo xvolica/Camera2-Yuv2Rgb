@@ -15,9 +15,19 @@ Android5.0 Camera2 ImageReader 读取YUV格式转为RGB格式的方法
  1.将so库放到jniLibs文件夹下
  
  2.将src中代码放入工程
-
+ 
+ 3.在Application或入口Activity中加入
+```
+    static{
+        System.loadLibrary("ImageConvert");
+    }
+```
 # 示例方法：
-```    public void onImageAvailable(ImageReader reader) {
+```
+    static{
+        System.loadLibrary("ImageConvert");
+    }
+    public void onImageAvailable(ImageReader reader) {
         Image image = reader.acquireLatestImage();
         Image.Plane[] plane = image.getPlanes();
         byte[][] mYUVBytes = new byte[plane.length][];
